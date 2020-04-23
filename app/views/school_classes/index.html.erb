@@ -1,0 +1,9 @@
+<h2>Class Index Page:</h2>
+
+<ul>
+    <% @school_classes.each do |klass| %>
+        <li><%= klass.title.capitalize %> is held in room #<%= klass.room_number %></li>
+    <% end %>
+</ul>
+
+<%= params.inspect %>
